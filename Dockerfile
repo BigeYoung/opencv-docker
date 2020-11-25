@@ -13,3 +13,5 @@ RUN apt update -y && \
     cat /proc/cpuinfo | grep "processor" | wc -l | xargs make -j && \
     make install && cd ../.. && \
     rm -rf opencv
+
+RUN apt install libeigen3-dev -y
