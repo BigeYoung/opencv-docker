@@ -2,8 +2,6 @@ FROM ubuntu:18.04
 
 WORKDIR /root
 
-ADD sources.tar.gz /etc/apt/
-
 RUN apt update -y && \
     apt install git build-essential cmake libgtk2.0-dev pkg-config \
     libavcodec-dev libavformat-dev libswscale-dev -y && \
